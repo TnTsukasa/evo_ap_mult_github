@@ -1,16 +1,6 @@
 # EVO_AP_MULT
 Design approximate multipliers with multiple approximate compressor by evolutionary algorithm.
 
-## Source Code (src)
-### 1. Partial Product Model (ppmod)
-The exhaustive simulation is a time-consuming task which need lots of test vectors. We analysis the distribution probability of parital products, and proposed the  partial product model which is used for reducing the number of test vectors in simulation. 
-
-### 2. Multi-object Evolutionary Algorithm (evo)
-NSGA-II is a multi-objective evolutionary algorithm which is applied in this method. Multiplier searching is conducted by array recoder and wallace tree. We use n-1 compressor in compressed tree include 4-1, 3-1 and 2-1 compressor.Default unsinged version(0<=r<=n-1 for an n*n multiplier). You can directly duplicate the features(N:1 compressors number) to make a signed version change(signed version: 0<=r<=n-2 for an n*n multiplier), then use syn_info.py to generate synthesis information.
-
-### 3. Compressor information (comp)
-Give the PPA of need compressors.
-
 ## Multipliers
 All error metrics and hardware performance metrics of generated multipliers are stored in dat. Please search the number of approximate multiplier you need and use mult_gen.py to generate .  
 ### 1. Data of result (dat)
