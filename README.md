@@ -2,19 +2,22 @@
 Design approximate multipliers with multiple approximate compressor by evolutionary algorithm.
 
 ## Multipliers
-All error metrics and hardware performance metrics of generated multipliers are stored in dat. Please search the number of approximate multiplier you need and use mult_gen.py to generate .  
+All error metrics and hardware performance metrics of generated multipliers are stored in ./multiplier/dat. Please search the number of approximate multiplier you need and use mult_gen.py to generate it.  
 ### 1. Data of result (dat)
 The result of proposed experiment, and the type of approximate multipliers are defined as:
     
 * Type of multiplier
-si: signed
-unsi: unsigned
+
+    si: signed
+    unsi: unsigned
 
 * Width
-wid_a: a*a multiplier
 
-* Length of approximate part:
-r_b: b is the length of approximate part
+    wid_a: a*a multiplier
+
+* Length of approximate part
+    
+    r_b: b is the length of approximate part
 
 Files of each type of multpliers are:
 * features.csv: the search result of approximate multipiler which is encoded as a set of integers
